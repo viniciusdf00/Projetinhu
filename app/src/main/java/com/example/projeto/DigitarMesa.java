@@ -1,5 +1,6 @@
 package com.example.projeto;
 
+import java.util.Scanner;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 
 public class DigitarMesa extends AppCompatActivity {
 
@@ -22,6 +24,7 @@ public class DigitarMesa extends AppCompatActivity {
                 DigiteNumeroMesa = (EditText)findViewById(R.id.DigiteNumeroMesa);
                 btnConfMesa = (Button)findViewById(R.id.btnConfMesa);
                 btnVoltarMesa = (Button)findViewById(R.id.btnVoltarMesa);
+
 
                 btnVoltarMesa.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -39,6 +42,14 @@ public class DigitarMesa extends AppCompatActivity {
 
                 }
                 });
+
+
+            }
+
+            public EditText getMesa(){
+            DigiteNumeroMesa = getMesa();
+        return DigiteNumeroMesa;
+
         }
 
 
